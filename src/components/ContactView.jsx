@@ -86,6 +86,7 @@ function ContactView() {
                     <button type={"submit"}>Update</button>
                     <button onClick={handleDelete}>Delete Contact</button>
                 </div>
+                <iframe width="100%" height="250" src={`https://maps.google.com/maps?q=${contact.latitude}, ${contact.longitude}&output=embed`}></iframe>
             </form>
         </div>
     );
